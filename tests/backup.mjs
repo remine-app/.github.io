@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {getSettings,backupData,restoreData,updateProgress,getProgress} from '../src/repositories/local.ts';
+const map=new Map();globalThis.localStorage={getItem:k=>map.get(k)||null,setItem:(k,v)=>map.set(k,v),removeItem:k=>map.delete(k)};
+test('legacy settings normalize; current mode and counts survive backup',()=>{localStorage.setItem('rechant.settings.v1',JSON.stringify({seekLeadMs:900}));assert.equal(getSettings().seekLeadMs,900);updateProgress('love-attack',10000,'follow',1000);updateProgress('love-attack',11000,'practice',1000,true);const b=backupData();map.clear();restoreData(b);assert.equal(getProgress()['love-attack'].mode,'practice');assert.equal(getProgress()['love-attack'].sessions,1);assert.equal(getProgress()['love-attack'].practiceMs,2000)});
+test('invalid backup leaves existing data intact',()=>{const b=JSON.stringify(backupData());assert.throws(()=>restoreData({schemaVersion:'wrong'}));assert.equal(JSON.stringify(backupData()).replace(/createdAt[^,]+/,''),b.replace(/createdAt[^,]+/,''))});

@@ -1,81 +1,54 @@
-# Re:chant Web App v0.2.1
+# Re:chant Web App v0.3.0
 
-모바일 우선 RESCENE 응원법 연습 웹앱입니다. v0.2.1부터 앱/콘텐츠/음원을 분리합니다.
-
-## 운영 구조
-
-- GitHub Pages: React 앱 + 콘텐츠 JSON + 앨범 아트 + audio-catalog.json
-- Dropbox: Re:chant Audio Pack ZIP 배포
-- 사용자 브라우저 IndexedDB: 설치한 MP3 보관 및 로컬 재생
-- Studio: 콘텐츠 ZIP / Dropbox용 음원팩 ZIP 생성
-
-MP3는 GitHub 저장소나 GitHub Pages에 포함하지 않습니다.
-
-## 현재 Dropbox 음원팩
-
-웹앱은 `public/audio-catalog.json`에서 고정 공유 링크를 읽습니다. 현재 Love Attack 음원팩은 Dropbox 직접 다운로드 링크(`dl=1`)로 연결되어 있습니다.
-
-사용 흐름:
-1. 곡 선택
-2. 로컬에 음원이 없으면 `음원팩 다운로드`
-3. Dropbox ZIP 다운로드
-4. `다운로드한 ZIP 설치`
-5. manifest / songId / SHA-256 / 파일 크기 검증
-6. IndexedDB 저장
-7. 이후 로컬 MP3 재생
-
-## 콘텐츠 반영
-
-Studio v0.4.2에서 콘텐츠 ZIP을 만든 뒤 압축 내부의 내용을 저장소의 `public/content/`에 배치합니다.
-
-```text
-public/content/
-  manifest.json
-  songs/
-    love-attack.json
-  assets/
-    love-attack/
-      cover.webp
-```
-
-개발 테스트에는 Studio의 `선택 곡 테스트 ZIP`, 정식 배포에는 `배포 준비 곡 전체 ZIP`을 사용합니다.
-
-## 화면
-
-- 홈: 이어하기 / 주간 연습 통계 / 최근 곡
-- 곡 목록: 콘텐츠 기반 자동 목록, 음원 설치 상태 표시
-- 연습: 전체 따라가기 / 실전 연습
-- 실전 연습: 힌트 표시 / 원본 가사만
-- 설정: 선행 재생 시간 / 기본 모드 / 로컬 음원 관리
-
-## 연습 UX
-
-- 현재 가사 줄 변경 시 중앙 자동 추적
-- 사용자가 직접 스크롤하면 자동 추적 중지
-- `현재 가사` 버튼으로 복귀
-- 가사 줄 클릭 시 `startMs - seekLeadMs`로 이동
-- 기본 선행 재생 0.7초, 0~3초 조절
+기존 v0.2.1 React/TypeScript/Vite 웹앱의 디자인과 사용 흐름을 개선한 버전입니다.
 
 ## 실행
+Node.js 24 이상을 사용합니다. Windows PowerShell에서는 다음 명령을 사용하세요.
 
 ```powershell
-npm install
-npm run dev
+npm.cmd install
+npm.cmd test
+npm.cmd run dev
 ```
 
-또는:
+표시된 로컬 주소에 접속하세요. 프로덕션 빌드는 `npm.cmd run build`입니다.
+브라우저 테스트는 `npx.cmd playwright install chromium`, `npx.cmd playwright test`로 실행합니다.
 
-```powershell
-npm run app
-```
+## 변경사항
+- 응원봉 원본을 크롭한 홈 카드와 곡 헤더, RESCENE 심볼
+- 시스템 고딕체, 존댓말 안내, 핑크 카드 스타일
+- 고정 시간 열과 가사 열, 현재 줄 배경과 응원법 텍스트 색상 분리
+- 다운로드 → ZIP 설치 → 준비 완료의 단계별 안내
+- 연습 화면 진입 후 30초 경과 시 재생 여부와 관계없이 1회 집계. 같은 화면에서는 추가 집계하지 않으며, 30초 전 이탈하면 취소
+- 일시정지는 누적 시간을 유지하고 탐색 이동 시간은 더하지 않음
+- 2초를 초과하는 측정 공백은 재생 시간에서 제외
+- 곡 변경 또는 화면 이탈 후 새 진입은 새 세션
+- 곡별 최신 모드와 위치 저장
+- 이번 주 통계를 일자별 기록으로 계산
+- 설정 중복 항목 제거, JSON 백업과 복원
+- ZIP 중복 경로/곡 검증, CRC 및 SHA-256 검사, IndexedDB 일괄 트랜잭션
+- 기존 IndexedDB 이름과 localStorage 키 유지
 
-## GitHub Pages
+## 배포
+기존 저장소의 파일 위에 소스 파일을 반영합니다. **기존 public/content 안의 콘텐츠는 삭제하지 마세요.**
+기존 public/content/manifest.json, songs/, assets/는 유지하면서 새 소스를 병합하세요.
+main에 push하면 기존 GitHub Actions가 빌드/배포합니다. base는 /Re-chant/를 유지합니다.
+Build ZIP은 dist 내부 파일입니다. GitHub Actions 방식이면 Source를 사용하세요.
+GitHub 배포는 이 작업에서 실행하지 않았습니다.
 
-저장소 이름은 `Re-chant` 기준이며 Vite base는 `/Re-chant/`입니다. main push 시 `.github/workflows/deploy-pages.yml`이 자동 빌드/배포합니다.
+## 콘텐츠와 음원
+첨부 원본 소스에는 실제 콘텐츠 JSON과 앨범아트가 없습니다. 실제 가사를 새로 만들지 않았습니다.
+기존 사이트의 Studio 콘텐츠를 public/content에 유지/추가해야 합니다.
+MP3는 포함하지 않습니다. 기존 Dropbox 팩을 다운로드하고 받은 ZIP을 선택하세요.
+음원 설치는 브라우저 저장소를 사용하므로 기존 사이트와 동일한 URL/브라우저에서 업데이트해야 저장된 음원을 사용할 수 있습니다.
+기존 v0.2.1은 날짜별 통계가 없으므로 과거 누적 기록은 유지하되 새 주간 통계는 업데이트 후 기록부터 표시합니다.
+백업은 설정/위치/모드/시간/횟수/날짜별 통계를 포함하고 MP3는 제외합니다.
 
-## 향후 확장
-
-- PWA 오프라인 앱 캐시
-- 음원 업데이트 알림 (audioVersion 비교)
-- 마이크 기반 응원법 채점
-- 점수/랭킹 백엔드
+## 검증과 제한
+단위 테스트 11개 및 Chromium 브라우저 흐름 테스트 1개를 실행했습니다.
+브라우저 테스트는 테스트 전용 합성 WAV와 가상 콘텐츠를 사용하며 배포 콘텐츠에는 포함되지 않습니다.
+진입 30초 전 0회, 이후 1회, 설치/재로드/모드 복원을 확인했습니다.
+320×568, 375×812, 390×844, 430×932의 Chromium 뷰포트를 확인했습니다.
+실제 LOVE ATTACK 콘텐츠와 Dropbox 음원팩 전체 재생 싱크 검증은 실제 콘텐츠/팩 미첨부로 미실행입니다.
+실물 Android/iPhone Safari는 별도 확인이 필요합니다.
+PWA 서비스 워커/오프라인 실행은 기존 v0.2.1에서 구현되지 않아 이번 버전에서도 추가하지 않았습니다.

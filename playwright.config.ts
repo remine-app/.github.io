@@ -1,0 +1,1 @@
+import{defineConfig}from'@playwright/test';export default defineConfig({testDir:'e2e',timeout:90000,use:{baseURL:'http://127.0.0.1:4321/Re-chant/',headless:true},webServer:{command:'npm run dev -- --port 4321',url:'http://127.0.0.1:4321/Re-chant/',reuseExistingServer:false}});
