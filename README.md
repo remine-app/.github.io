@@ -1,48 +1,81 @@
-# Re:chant Web App v0.1.0
+# Re:chant Web App v0.2.0
 
-Mobile-first React/TypeScript/Vite application for RESCENE fanchant practice. This is a **working audio-first scaffold**, not a released production PWA.
+모바일 우선 RESCENE 응원법 연습 웹앱입니다. v0.2.0부터 앱/콘텐츠/음원을 분리합니다.
 
-## Launch (Windows PowerShell)
+## 운영 구조
+
+- GitHub Pages: React 앱 + 콘텐츠 JSON + 앨범 아트 + audio-catalog.json
+- Dropbox: Re:chant Audio Pack ZIP 배포
+- 사용자 브라우저 IndexedDB: 설치한 MP3 보관 및 로컬 재생
+- Studio: 콘텐츠 ZIP / Dropbox용 음원팩 ZIP 생성
+
+MP3는 GitHub 저장소나 GitHub Pages에 포함하지 않습니다.
+
+## 현재 Dropbox 음원팩
+
+웹앱은 `public/audio-catalog.json`에서 고정 공유 링크를 읽습니다. 현재 Love Attack 음원팩은 Dropbox 직접 다운로드 링크(`dl=1`)로 연결되어 있습니다.
+
+사용 흐름:
+1. 곡 선택
+2. 로컬에 음원이 없으면 `음원팩 다운로드`
+3. Dropbox ZIP 다운로드
+4. `다운로드한 ZIP 설치`
+5. manifest / songId / SHA-256 / 파일 크기 검증
+6. IndexedDB 저장
+7. 이후 로컬 MP3 재생
+
+## 콘텐츠 반영
+
+Studio v0.4.2에서 콘텐츠 ZIP을 만든 뒤 압축 내부의 내용을 저장소의 `public/content/`에 배치합니다.
+
+```text
+public/content/
+  manifest.json
+  songs/
+    love-attack.json
+  assets/
+    love-attack/
+      cover.webp
+```
+
+개발 테스트에는 Studio의 `선택 곡 테스트 ZIP`, 정식 배포에는 `배포 준비 곡 전체 ZIP`을 사용합니다.
+
+## 화면
+
+- 홈: 이어하기 / 주간 연습 통계 / 최근 곡
+- 곡 목록: 콘텐츠 기반 자동 목록, 음원 설치 상태 표시
+- 연습: 전체 따라가기 / 실전 연습
+- 실전 연습: 힌트 표시 / 원본 가사만
+- 설정: 선행 재생 시간 / 기본 모드 / 로컬 음원 관리
+
+## 연습 UX
+
+- 현재 가사 줄 변경 시 중앙 자동 추적
+- 사용자가 직접 스크롤하면 자동 추적 중지
+- `현재 가사` 버튼으로 복귀
+- 가사 줄 클릭 시 `startMs - seekLeadMs`로 이동
+- 기본 선행 재생 0.7초, 0~3초 조절
+
+## 실행
+
+```powershell
+npm install
+npm run dev
+```
+
+또는:
 
 ```powershell
 npm run app
 ```
 
-The command installs dependencies if missing and starts Vite with an opened browser. Alternatively `npm install` followed by `npm run dev`. `npm run build` validates TypeScript and builds the site. Requires Node 20.19+ or Node 22.12+ for contemporary Vite releases. For Windows, `run-app.mjs` uses `cmd.exe` rather than directly spawning `npm.cmd`.
+## GitHub Pages
 
-## Actual input files
+저장소 이름은 `Re-chant` 기준이며 Vite base는 `/Re-chant/`입니다. main push 시 `.github/workflows/deploy-pages.yml`이 자동 빌드/배포합니다.
 
-- `public/packs/audio/manifest.json` and `public/packs/audio/audio/love-attack.mp3` extracted from the provided Rechant Audio Pack v1.0.0. SHA256 from source manifest (see it).
-- **No finalized Studio-exported lyrics/chant JSON or album art was supplied.** The app explicitly displays a "content not yet installed" placeholder; it does not invent synchronized lyrics, chants, or original artwork. Actual Love Attack audio plays.
-- The UI is based on the supplied pink/white three-screen mockup, with the previously agreed **two practice modes**.
+## 향후 확장
 
-## Add a Studio content pack
-
-1. Copy a JSON file into `public/packs/content/songs/love-attack.json`, containing `songId`, `title`, `artist`, `lyrics` (array of `{id,index,startMs,endMs,lyric,chants:[{id,text,startMs?,endMs?}]}`). Studio's actual export may use different field names; inspect and adapt instead of silently losing timing/inline chants.
-2. Add the actual, properly licensed art as `public/packs/content/assets/love-attack/cover.webp`.
-3. In `public/packs/content/manifest.json`, set:
-
-```json
-{"schemaVersion":"rechant-content-pack-1","packVersion":"1.0.0","songs":[{"songId":"love-attack","dataFile":"songs/love-attack.json","cover":"assets/love-attack/cover.webp"}]}
-```
-
-Then restart/reload. `songId` connects audio and content. Only paths inside the local `/packs/` trees are accepted. Studio data must be checked before publishing, particularly where a lyric line and a chant are independently timed.
-
-## Features in v0.1.0
-
-- Home, Songs, Practice, Settings, 3-button bottom bar; in-browser persistence (settings and recent positions, approximate accumulated practice time/session count).
-- Real MP3 playback; play/pause, ±10s, range seek, previous/next lyric navigation when lyric pack is present.
-- Follow / practice; practice: hint masks versus lyrics-only; seek-before-lyric customizable 0.0–3.0s.
-- Automatically centers active lyric on active-index transitions. User manual scrolling suspends tracking, with a "current position" recovery button.
-- Dedicated song/album/audio service and data models. Scoring and ranking type definitions are reserved for later without collecting microphone data.
-
-## Not implemented yet
-
-- Voice scoring, user accounts, synchronized server rankings, offline music caching, service worker, official app icons, artist artwork, mobile browser end-to-end verification.
-- The audio pack may include copyrighted recorded material. Verify that distributing the audio and art online is authorized before deployment.
-
-## Architecture
-
-`src/pages/` screens; `src/components/` reusable elements; `src/services/songs.ts` pack loader; `src/services/audio.ts` dedicated HTMLAudioElement wrapper; `src/services/activeLyric.ts` time indexing; `src/repositories/local.ts` browser preferences and practice progress; `src/models/types.ts` includes future `ChantAttempt` and `ScoreRecord` models.
-
-Future scoring should connect to the audio timeline and a separately permissioned microphone recording service; do not treat `HTMLAudioElement.currentTime` as a sample-accurate clock for ranking. For rankings, add server validation/identity and anti-cheat controls; never trust client-submitted scores as authoritative.
+- PWA 오프라인 앱 캐시
+- 음원 업데이트 알림 (audioVersion 비교)
+- 마이크 기반 응원법 채점
+- 점수/랭킹 백엔드

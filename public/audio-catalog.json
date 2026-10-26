@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "rechant-audio-catalog-1",
+  "updatedAt": "2026-10-26T14:00:00Z",
+  "defaultDownloadUrl": "https://www.dropbox.com/scl/fi/go4stf503iou7ht8ocskr/Rechant-Audio-Pack.zip?rlkey=y7o0oz3bo90w3atv80hzdafk0&st=elcirgj2&dl=1",
+  "tracks": [
+    {
+      "songId": "love-attack",
+      "title": "Love Attack",
+      "artist": "RESCENE",
+      "durationMs": 178680,
+      "audioVersion": "1.0.0",
+      "byteLength": 7147200,
+      "sha256": "75a08c7c029eec89cf877b1c66d9ac798c8530cc80537d640037a5fe5475cf6c",
+      "downloadUrl": "https://www.dropbox.com/scl/fi/go4stf503iou7ht8ocskr/Rechant-Audio-Pack.zip?rlkey=y7o0oz3bo90w3atv80hzdafk0&st=elcirgj2&dl=1"
+    }
+  ]
+}
