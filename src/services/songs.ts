@@ -12,9 +12,9 @@ export async function loadSongs():Promise<Song[]>{
   try{catalog=await json(AUDIO_CATALOG_URL)}catch{}
   const contentEntries=Array.isArray(contentManifest.songs)?contentManifest.songs:[];
   const tracks:AudioCatalogTrack[]=Array.isArray(catalog.tracks)?catalog.tracks:[];
-  const contentById=new Map(contentEntries.map((x:any)=>[String(x.songId||''),x]));
-  const trackById=new Map(tracks.map(x=>[String(x.songId||''),x]));
-  const ids=[...new Set([...contentById.keys(),...trackById.keys()].filter(Boolean))];
+  const contentById=new Map<string,any>(contentEntries.map((x:any):[string,any]=>[String(x.songId||''),x]));
+  const trackById=new Map<string,AudioCatalogTrack>(tracks.map((x):[string,AudioCatalogTrack]=>[String(x.songId||''),x]));
+  const ids:string[]=[...new Set<string>([...contentById.keys(),...trackById.keys()].filter((id):id is string=>Boolean(id)))];
   const installed=await listInstalledAudio(),byId=new Map<string,InstalledAudioMeta>(installed.map(x=>[x.songId,x]));
   const result:Song[]=[];
   for(const songId of ids){

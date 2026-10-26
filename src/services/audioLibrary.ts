@@ -7,12 +7,12 @@ const DB_VERSION=1;
 interface AudioRow extends InstalledAudioMeta{blob:Blob}
 
 function openDb():Promise<IDBDatabase>{return new Promise((resolve,reject)=>{const req=indexedDB.open(DB_NAME,DB_VERSION);req.onupgradeneeded=()=>{const db=req.result;if(!db.objectStoreNames.contains(STORE))db.createObjectStore(STORE,{keyPath:'songId'})};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
-async function request<T>(mode:IDBTransactionMode,run:(s:IDBObjectStore)=>IDBRequest<T>):Promise<T>{const db=await openDb();try{return await new Promise<T>((resolve,reject)=>{const tx=db.transaction(STORE,mode),req=run(tx.objectStore(STORE));req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);tx.onabort=()=>reject(tx.error)})}finally{db.close()}}
+async function request<T>(mode:IDBTransactionMode,run:(s:IDBObjectStore)=>IDBRequest):Promise<T>{const db=await openDb();try{return await new Promise<T>((resolve,reject)=>{const tx=db.transaction(STORE,mode),req=run(tx.objectStore(STORE));req.onsuccess=()=>resolve(req.result as T);req.onerror=()=>reject(req.error);tx.onabort=()=>reject(tx.error)})}finally{db.close()}}
 
 export async function listInstalledAudio():Promise<InstalledAudioMeta[]>{const rows=await request<AudioRow[]>('readonly',s=>s.getAll());return(rows||[]).map(({blob:_blob,...meta})=>meta)}
 export async function getInstalledAudio(songId:string):Promise<AudioRow|undefined>{return request<AudioRow|undefined>('readonly',s=>s.get(songId))}
-export async function removeInstalledAudio(songId:string):Promise<void>{await request<IDBValidKey>('readwrite',s=>s.delete(songId))}
-export async function clearInstalledAudio():Promise<void>{await request<undefined>('readwrite',s=>s.clear() as IDBRequest<undefined>)}
+export async function removeInstalledAudio(songId:string):Promise<void>{await request<undefined>('readwrite',s=>s.delete(songId))}
+export async function clearInstalledAudio():Promise<void>{await request<undefined>('readwrite',s=>s.clear())}
 
 async function sha256Hex(blob:Blob):Promise<string>{const hash=await crypto.subtle.digest('SHA-256',await blob.arrayBuffer());return Array.from(new Uint8Array(hash),b=>b.toString(16).padStart(2,'0')).join('')}
 function safePath(v:string){return!!v&&!v.startsWith('/')&&!v.includes('..')&&!v.includes('://')}

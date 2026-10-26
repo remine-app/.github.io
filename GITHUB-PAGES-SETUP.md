@@ -9,7 +9,7 @@
 
 ```powershell
 git add -A
-git commit -m "Rechant Web App v0.2.0"
+git commit -m "Rechant Web App v0.2.1"
 git push origin main
 ```
 
