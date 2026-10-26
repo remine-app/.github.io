@@ -1,0 +1,10 @@
+{
+  "name": "Re:chant · RESCENE Fanchant",
+  "short_name": "Re:chant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff8fb",
+  "theme_color": "#f23c79",
+  "description": "RESCENE 응원법 연습"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "rechant-audio-pack-1",
+  "packId": "rechant-audio",
+  "packVersion": "1.0.0",
+  "generatedAt": "2026-10-26T12:51:39.352Z",
+  "tracks": [
+    {
+      "songId": "love-attack",
+      "fileName": "audio/love-attack.mp3",
+      "byteLength": 7147200,
+      "durationMs": 178680,
+      "sha256": "75a08c7c029eec89cf877b1c66d9ac798c8530cc80537d640037a5fe5475cf6c",
+      "audioVersion": "1.0.0"
+    }
+  ]
+}
