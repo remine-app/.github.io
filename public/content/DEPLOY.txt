@@ -1,0 +1,8 @@
+Re:chant Web Content Pack
+
+제작자용 파일입니다. 일반 사용자에게 설치시키는 팩이 아닙니다.
+TEST 패키지입니다. 선택한 곡만 포함되므로 정식 전체 catalog를 덮어쓰지 마세요.
+MP3는 이 콘텐츠팩에 포함되지 않습니다.
+
+권장 대상 경로:
+  D:\Rescene\Re-chant\public\content\

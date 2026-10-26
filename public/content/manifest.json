@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "rechant-content-pack-1",
+  "packId": "rechant-content",
+  "packVersion": "1.0.0",
+  "generatedAt": "2026-10-26T14:27:46.090Z",
+  "exportMode": "test",
+  "songs": [
+    {
+      "songId": "love-attack",
+      "title": "LOVE ATTACK",
+      "artist": "RESCENE",
+      "album": "SCENEDROME",
+      "version": "1.0.0",
+      "durationMs": 178680,
+      "accentColor": "#ec4778",
+      "dataFile": "songs/love-attack.json",
+      "coverFile": "assets/love-attack/cover.webp",
+      "requiredAudio": {
+        "audioVersion": "1.0.0",
+        "durationMs": 178680,
+        "sha256": "75a08c7c029eec89cf877b1c66d9ac798c8530cc80537d640037a5fe5475cf6c",
+        "byteLength": 7147200
+      }
+    }
+  ]
+}

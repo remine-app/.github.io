@@ -1,0 +1,1799 @@
+{
+  "schemaVersion": "rechant-song-content-1",
+  "songId": "love-attack",
+  "title": "LOVE ATTACK",
+  "artist": "RESCENE",
+  "album": "SCENEDROME",
+  "version": "1.0.0",
+  "durationMs": 178680,
+  "defaultOffsetMs": 0,
+  "accentColor": "#ec4778",
+  "lines": [
+    {
+      "id": "line-001",
+      "index": 0,
+      "startMs": 3526,
+      "endMs": 4745,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-001-chant-0",
+          "text": "Feeling love attack!",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 3526,
+          "lineEndMs": 4745,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "Feeling love attack!"
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "index": 1,
+      "startMs": 4795,
+      "endMs": 6117,
+      "lyric": "I am all you need",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "I am all you need"
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "index": 2,
+      "startMs": 6167,
+      "endMs": 7489,
+      "lyric": "I am all you need",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "I am all you need"
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "index": 3,
+      "startMs": 7539,
+      "endMs": 8016,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-004-chant-0",
+          "text": "(RESCENE)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 7539,
+          "lineEndMs": 8016,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "(RESCENE)"
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "index": 4,
+      "startMs": 8066,
+      "endMs": 9077,
+      "lyric": "So come and get it now",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "So come and get it now"
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "index": 5,
+      "startMs": 9127,
+      "endMs": 10499,
+      "lyric": "I am all you need",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "I am all you need"
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "index": 6,
+      "startMs": 10548,
+      "endMs": 11920,
+      "lyric": "I am all you need",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "I am all you need"
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "index": 7,
+      "startMs": 11970,
+      "endMs": 12467,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-008-chant-0",
+          "text": "(LOVE ATTACK!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 11970,
+          "lineEndMs": 12467,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "(LOVE ATTACK!)"
+        }
+      ]
+    },
+    {
+      "id": "line-009",
+      "index": 8,
+      "startMs": 12517,
+      "endMs": 13508,
+      "lyric": "Yeah get it",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "Yeah get it"
+        }
+      ]
+    },
+    {
+      "id": "line-010",
+      "index": 9,
+      "startMs": 13558,
+      "endMs": 15046,
+      "lyric": "걸음마다 눈부신 나",
+      "chants": [
+        {
+          "id": "line-010-chant-0",
+          "text": "(너!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 13558,
+          "lineEndMs": 15046,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "걸음마다 눈부신 나"
+        },
+        {
+          "type": "chant",
+          "text": "(너!)"
+        }
+      ]
+    },
+    {
+      "id": "line-011",
+      "index": 10,
+      "startMs": 15096,
+      "endMs": 17780,
+      "lyric": "Let's get it ",
+      "chants": [
+        {
+          "id": "line-011-chant-0",
+          "text": "started",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 15096,
+          "lineEndMs": 17780,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "Let's get it "
+        },
+        {
+          "type": "chant",
+          "text": "started"
+        }
+      ]
+    },
+    {
+      "id": "line-012",
+      "index": 11,
+      "startMs": 17830,
+      "endMs": 20275,
+      "lyric": "모든 순간 시선을 난",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "모든 순간 시선을 난"
+        }
+      ]
+    },
+    {
+      "id": "line-013",
+      "index": 12,
+      "startMs": 20325,
+      "endMs": 21835,
+      "lyric": "피하지 ",
+      "chants": [
+        {
+          "id": "line-013-chant-0",
+          "text": "않지",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 20325,
+          "lineEndMs": 21835,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "피하지 "
+        },
+        {
+          "type": "chant",
+          "text": "않지"
+        }
+      ]
+    },
+    {
+      "id": "line-014",
+      "index": 13,
+      "startMs": 21884,
+      "endMs": 24082,
+      "lyric": "What you waiting for",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "What you waiting for"
+        }
+      ]
+    },
+    {
+      "id": "line-015",
+      "index": 14,
+      "startMs": 24131,
+      "endMs": 26196,
+      "lyric": "I'm just ",
+      "chants": [
+        {
+          "id": "line-015-chant-0",
+          "text": "waiting for",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 24131,
+          "lineEndMs": 26196,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "I'm just "
+        },
+        {
+          "type": "chant",
+          "text": "waiting for"
+        }
+      ]
+    },
+    {
+      "id": "line-016",
+      "index": 15,
+      "startMs": 26246,
+      "endMs": 27128,
+      "lyric": "나를 ",
+      "chants": [
+        {
+          "id": "line-016-chant-0",
+          "text": "스친",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 26246,
+          "lineEndMs": 27128,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "나를 "
+        },
+        {
+          "type": "chant",
+          "text": "스친"
+        }
+      ]
+    },
+    {
+      "id": "line-017",
+      "index": 16,
+      "startMs": 27177,
+      "endMs": 28060,
+      "lyric": "깊은 ",
+      "chants": [
+        {
+          "id": "line-017-chant-0",
+          "text": "끌림",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 27177,
+          "lineEndMs": 28060,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "깊은 "
+        },
+        {
+          "type": "chant",
+          "text": "끌림"
+        }
+      ]
+    },
+    {
+      "id": "line-018",
+      "index": 17,
+      "startMs": 28109,
+      "endMs": 30389,
+      "lyric": "직감을 Chasing",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "직감을 Chasing"
+        }
+      ]
+    },
+    {
+      "id": "line-019",
+      "index": 18,
+      "startMs": 30439,
+      "endMs": 31605,
+      "lyric": "Oh so strong",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "Oh so strong"
+        }
+      ]
+    },
+    {
+      "id": "line-020",
+      "index": 19,
+      "startMs": 31655,
+      "endMs": 32213,
+      "lyric": "너를 느껴 난",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너를 느껴 난"
+        }
+      ]
+    },
+    {
+      "id": "line-021",
+      "index": 20,
+      "startMs": 32263,
+      "endMs": 33733,
+      "lyric": "Yeah so strong",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "Yeah so strong"
+        }
+      ]
+    },
+    {
+      "id": "line-022",
+      "index": 21,
+      "startMs": 33782,
+      "endMs": 34493,
+      "lyric": "다가가 이미 난",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "다가가 이미 난"
+        }
+      ]
+    },
+    {
+      "id": "line-023",
+      "index": 22,
+      "startMs": 34543,
+      "endMs": 35771,
+      "lyric": "On and on",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "On and on"
+        }
+      ]
+    },
+    {
+      "id": "line-024",
+      "index": 23,
+      "startMs": 35820,
+      "endMs": 36684,
+      "lyric": "너를 파헤쳐",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너를 파헤쳐"
+        }
+      ]
+    },
+    {
+      "id": "line-025",
+      "index": 24,
+      "startMs": 36733,
+      "endMs": 38418,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-025-chant-0",
+          "text": "1234",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 36733,
+          "lineEndMs": 38418,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "1234"
+        }
+      ]
+    },
+    {
+      "id": "line-026",
+      "index": 25,
+      "startMs": 38468,
+      "endMs": 40897,
+      "lyric": "Like me, Like me",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "Like me, Like me"
+        }
+      ]
+    },
+    {
+      "id": "line-027",
+      "index": 26,
+      "startMs": 40946,
+      "endMs": 42136,
+      "lyric": "아주 눈이 부신",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "아주 눈이 부신"
+        }
+      ]
+    },
+    {
+      "id": "line-028",
+      "index": 27,
+      "startMs": 42185,
+      "endMs": 46071,
+      "lyric": "너를 숨김없이 보여줘 ",
+      "chants": [
+        {
+          "id": "line-028-chant-0",
+          "text": "(RESCENE!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 42185,
+          "lineEndMs": 46071,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너를 숨김없이 보여줘 "
+        },
+        {
+          "type": "chant",
+          "text": "(RESCENE!)"
+        }
+      ]
+    },
+    {
+      "id": "line-029",
+      "index": 28,
+      "startMs": 46120,
+      "endMs": 48700,
+      "lyric": "한 번도 빛난 적 없었던",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "한 번도 빛난 적 없었던"
+        }
+      ]
+    },
+    {
+      "id": "line-030",
+      "index": 29,
+      "startMs": 48749,
+      "endMs": 50452,
+      "lyric": "미지의 향으로",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "미지의 향으로"
+        }
+      ]
+    },
+    {
+      "id": "line-031",
+      "index": 30,
+      "startMs": 50502,
+      "endMs": 54328,
+      "lyric": "온 세상을 물들여 ",
+      "chants": [
+        {
+          "id": "line-031-chant-0",
+          "text": "(LOVE ATTACK!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 50502,
+          "lineEndMs": 54328,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "온 세상을 물들여 "
+        },
+        {
+          "type": "chant",
+          "text": "(LOVE ATTACK!)"
+        }
+      ]
+    },
+    {
+      "id": "line-032",
+      "index": 31,
+      "startMs": 54378,
+      "endMs": 56319,
+      "lyric": "새로워진 장면에 ",
+      "chants": [
+        {
+          "id": "line-032-chant-0",
+          "text": "(SCENE!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 54378,
+          "lineEndMs": 56319,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "새로워진 장면에 "
+        },
+        {
+          "type": "chant",
+          "text": "(SCENE!)"
+        }
+      ]
+    },
+    {
+      "id": "line-033",
+      "index": 32,
+      "startMs": 56368,
+      "endMs": 58640,
+      "lyric": "두 눈앞은 황홀해 ",
+      "chants": [
+        {
+          "id": "line-033-chant-0",
+          "text": "(RESCENE!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 56368,
+          "lineEndMs": 58640,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "두 눈앞은 황홀해 "
+        },
+        {
+          "type": "chant",
+          "text": "(RESCENE!)"
+        }
+      ]
+    },
+    {
+      "id": "line-034",
+      "index": 33,
+      "startMs": 58690,
+      "endMs": 60618,
+      "lyric": "너의 손을 잡을 땐",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너의 손을 잡을 땐"
+        }
+      ]
+    },
+    {
+      "id": "line-035",
+      "index": 34,
+      "startMs": 60667,
+      "endMs": 62595,
+      "lyric": "너와 어우러질 땐",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너와 어우러질 땐"
+        }
+      ]
+    },
+    {
+      "id": "line-036",
+      "index": 35,
+      "startMs": 62645,
+      "endMs": 65411,
+      "lyric": "빛을 이끌어 ",
+      "chants": [
+        {
+          "id": "line-036-chant-0",
+          "text": "With me, With me",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 62645,
+          "lineEndMs": 65411,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "빛을 이끌어 "
+        },
+        {
+          "type": "chant",
+          "text": "With me, With me"
+        }
+      ]
+    },
+    {
+      "id": "line-037",
+      "index": 36,
+      "startMs": 65461,
+      "endMs": 67730,
+      "lyric": "마치 Chemically 우린",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "마치 Chemically 우린"
+        }
+      ]
+    },
+    {
+      "id": "line-038",
+      "index": 37,
+      "startMs": 67780,
+      "endMs": 70587,
+      "lyric": "완벽하게 어울려",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "완벽하게 어울려"
+        }
+      ]
+    },
+    {
+      "id": "line-039",
+      "index": 38,
+      "startMs": 70636,
+      "endMs": 72627,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-039-chant-0",
+          "text": "Feeling love attack!",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 70636,
+          "lineEndMs": 72627,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "Feeling love attack!"
+        }
+      ]
+    },
+    {
+      "id": "line-040",
+      "index": 39,
+      "startMs": 72676,
+      "endMs": 74748,
+      "lyric": "너 역시 날 많이 기다려 왔겠지",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너 역시 날 많이 기다려 왔겠지"
+        }
+      ]
+    },
+    {
+      "id": "line-041",
+      "index": 40,
+      "startMs": 74798,
+      "endMs": 76968,
+      "lyric": "자 오늘 이 순간 날 You can't deny it",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "자 오늘 이 순간 날 You can't deny it"
+        }
+      ]
+    },
+    {
+      "id": "line-042",
+      "index": 41,
+      "startMs": 77018,
+      "endMs": 78941,
+      "lyric": "i got you the felling it's hotter than fire",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "i got you the felling it's hotter than fire"
+        }
+      ]
+    },
+    {
+      "id": "line-043",
+      "index": 42,
+      "startMs": 78991,
+      "endMs": 81211,
+      "lyric": "U with it, i'm with it, Admit, No lying",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "U with it, i'm with it, Admit, No lying"
+        }
+      ]
+    },
+    {
+      "id": "line-044",
+      "index": 43,
+      "startMs": 81261,
+      "endMs": 83273,
+      "lyric": "한순간에 날 발견해",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "한순간에 날 발견해"
+        }
+      ]
+    },
+    {
+      "id": "line-045",
+      "index": 44,
+      "startMs": 83322,
+      "endMs": 85473,
+      "lyric": "가려졌던 널 찾아내",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "가려졌던 널 찾아내"
+        }
+      ]
+    },
+    {
+      "id": "line-046",
+      "index": 45,
+      "startMs": 85523,
+      "endMs": 87545,
+      "lyric": "짙게 번지는 ",
+      "chants": [
+        {
+          "id": "line-046-chant-0",
+          "text": "Ambergris",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 85523,
+          "lineEndMs": 87545,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "짙게 번지는 "
+        },
+        {
+          "type": "chant",
+          "text": "Ambergris"
+        }
+      ]
+    },
+    {
+      "id": "line-047",
+      "index": 46,
+      "startMs": 87595,
+      "endMs": 89785,
+      "lyric": "어서 너의 모든 걸 ",
+      "chants": [
+        {
+          "id": "line-047-chant-0",
+          "text": "드러내",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 87595,
+          "lineEndMs": 89785,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "어서 너의 모든 걸 "
+        },
+        {
+          "type": "chant",
+          "text": "드러내"
+        }
+      ]
+    },
+    {
+      "id": "line-048",
+      "index": 47,
+      "startMs": 89835,
+      "endMs": 90856,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-048-chant-0",
+          "text": "Beautiful",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 89835,
+          "lineEndMs": 90856,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "Beautiful"
+        }
+      ]
+    },
+    {
+      "id": "line-049",
+      "index": 48,
+      "startMs": 90906,
+      "endMs": 91927,
+      "lyric": "너를 느껴 난",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너를 느껴 난"
+        }
+      ]
+    },
+    {
+      "id": "line-050",
+      "index": 49,
+      "startMs": 91976,
+      "endMs": 92877,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-050-chant-0",
+          "text": "Fabulous",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 91976,
+          "lineEndMs": 92877,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "Fabulous"
+        }
+      ]
+    },
+    {
+      "id": "line-051",
+      "index": 50,
+      "startMs": 92927,
+      "endMs": 94018,
+      "lyric": "다가가 이미 난",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "다가가 이미 난"
+        }
+      ]
+    },
+    {
+      "id": "line-052",
+      "index": 51,
+      "startMs": 94068,
+      "endMs": 95079,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-052-chant-0",
+          "text": "On and on",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 94068,
+          "lineEndMs": 95079,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "On and on"
+        }
+      ]
+    },
+    {
+      "id": "line-053",
+      "index": 52,
+      "startMs": 95128,
+      "endMs": 96139,
+      "lyric": "너를 파헤쳐",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너를 파헤쳐"
+        }
+      ]
+    },
+    {
+      "id": "line-054",
+      "index": 53,
+      "startMs": 96189,
+      "endMs": 97894,
+      "lyric": "(때를 기다려)",
+      "chants": [
+        {
+          "id": "line-054-chant-0",
+          "text": "1234",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 96189,
+          "lineEndMs": 97894,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "1234"
+        },
+        {
+          "type": "lyric",
+          "text": "(때를 기다려)"
+        }
+      ]
+    },
+    {
+      "id": "line-055",
+      "index": 54,
+      "startMs": 97944,
+      "endMs": 100385,
+      "lyric": "Like me, Like me",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "Like me, Like me"
+        }
+      ]
+    },
+    {
+      "id": "line-056",
+      "index": 55,
+      "startMs": 100435,
+      "endMs": 101631,
+      "lyric": "아주 눈이 부신",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "아주 눈이 부신"
+        }
+      ]
+    },
+    {
+      "id": "line-057",
+      "index": 56,
+      "startMs": 101681,
+      "endMs": 105755,
+      "lyric": "너를 숨김없이 보여줘 ",
+      "chants": [
+        {
+          "id": "line-057-chant-0",
+          "text": "(RESCENE!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 101681,
+          "lineEndMs": 105755,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너를 숨김없이 보여줘 "
+        },
+        {
+          "type": "chant",
+          "text": "(RESCENE!)"
+        }
+      ]
+    },
+    {
+      "id": "line-058",
+      "index": 57,
+      "startMs": 105804,
+      "endMs": 108205,
+      "lyric": "한 번도 빛난 적 없었던",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "한 번도 빛난 적 없었던"
+        }
+      ]
+    },
+    {
+      "id": "line-059",
+      "index": 58,
+      "startMs": 108255,
+      "endMs": 109839,
+      "lyric": "미지의 향으로",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "미지의 향으로"
+        }
+      ]
+    },
+    {
+      "id": "line-060",
+      "index": 59,
+      "startMs": 109888,
+      "endMs": 113784,
+      "lyric": "온 세상을 물들여 ",
+      "chants": [
+        {
+          "id": "line-060-chant-0",
+          "text": "(LOVE ATTACK!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 109888,
+          "lineEndMs": 113784,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "온 세상을 물들여 "
+        },
+        {
+          "type": "chant",
+          "text": "(LOVE ATTACK!)"
+        }
+      ]
+    },
+    {
+      "id": "line-061",
+      "index": 60,
+      "startMs": 113833,
+      "endMs": 115824,
+      "lyric": "새로워진 장면에 ",
+      "chants": [
+        {
+          "id": "line-061-chant-0",
+          "text": "(SCENE!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 113833,
+          "lineEndMs": 115824,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "새로워진 장면에 "
+        },
+        {
+          "type": "chant",
+          "text": "(SCENE!)"
+        }
+      ]
+    },
+    {
+      "id": "line-062",
+      "index": 61,
+      "startMs": 115873,
+      "endMs": 118205,
+      "lyric": "두 눈앞은 황홀해 ",
+      "chants": [
+        {
+          "id": "line-062-chant-0",
+          "text": "(RESCENE!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 115873,
+          "lineEndMs": 118205,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "두 눈앞은 황홀해 "
+        },
+        {
+          "type": "chant",
+          "text": "(RESCENE!)"
+        }
+      ]
+    },
+    {
+      "id": "line-063",
+      "index": 62,
+      "startMs": 118254,
+      "endMs": 120247,
+      "lyric": "너의 손을 잡을 땐",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너의 손을 잡을 땐"
+        }
+      ]
+    },
+    {
+      "id": "line-064",
+      "index": 63,
+      "startMs": 120296,
+      "endMs": 122289,
+      "lyric": "너와 어우러질 땐",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너와 어우러질 땐"
+        }
+      ]
+    },
+    {
+      "id": "line-065",
+      "index": 64,
+      "startMs": 122338,
+      "endMs": 125061,
+      "lyric": "빛을 이끌어 ",
+      "chants": [
+        {
+          "id": "line-065-chant-0",
+          "text": "With me, With me",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 122338,
+          "lineEndMs": 125061,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "빛을 이끌어 "
+        },
+        {
+          "type": "chant",
+          "text": "With me, With me"
+        }
+      ]
+    },
+    {
+      "id": "line-066",
+      "index": 65,
+      "startMs": 125111,
+      "endMs": 127344,
+      "lyric": "마치 Chemically 우린",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "마치 Chemically 우린"
+        }
+      ]
+    },
+    {
+      "id": "line-067",
+      "index": 66,
+      "startMs": 127394,
+      "endMs": 130177,
+      "lyric": "완벽하게 어울려",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "완벽하게 어울려"
+        }
+      ]
+    },
+    {
+      "id": "line-068",
+      "index": 67,
+      "startMs": 130227,
+      "endMs": 132202,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-068-chant-0",
+          "text": "Feeling love attack!",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 130227,
+          "lineEndMs": 132202,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "Feeling love attack!"
+        }
+      ]
+    },
+    {
+      "id": "line-069",
+      "index": 68,
+      "startMs": 132251,
+      "endMs": 133906,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-069-chant-0",
+          "text": "I am all you need",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 132251,
+          "lineEndMs": 133906,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "I am all you need"
+        }
+      ]
+    },
+    {
+      "id": "line-070",
+      "index": 69,
+      "startMs": 133956,
+      "endMs": 135611,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-070-chant-0",
+          "text": "I am all you need",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 133956,
+          "lineEndMs": 135611,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "I am all you need"
+        }
+      ]
+    },
+    {
+      "id": "line-071",
+      "index": 70,
+      "startMs": 135661,
+      "endMs": 136504,
+      "lyric": "So come and get it now",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "So come and get it now"
+        }
+      ]
+    },
+    {
+      "id": "line-072",
+      "index": 71,
+      "startMs": 136553,
+      "endMs": 138214,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-072-chant-0",
+          "text": "I am all you need",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 136553,
+          "lineEndMs": 138214,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "I am all you need"
+        }
+      ]
+    },
+    {
+      "id": "line-073",
+      "index": 72,
+      "startMs": 138263,
+      "endMs": 139923,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-073-chant-0",
+          "text": "I am all you need",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 138263,
+          "lineEndMs": 139923,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "I am all you need"
+        }
+      ]
+    },
+    {
+      "id": "line-074",
+      "index": 73,
+      "startMs": 139973,
+      "endMs": 141953,
+      "lyric": "So come and get it now",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "So come and get it now"
+        }
+      ]
+    },
+    {
+      "id": "line-075",
+      "index": 74,
+      "startMs": 142002,
+      "endMs": 142669,
+      "lyric": "1234",
+      "chants": [
+        {
+          "id": "line-075-chant-0",
+          "text": "(함성)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 142002,
+          "lineEndMs": 142669,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "1234"
+        },
+        {
+          "type": "chant",
+          "text": "(함성)"
+        }
+      ]
+    },
+    {
+      "id": "line-076",
+      "index": 75,
+      "startMs": 142719,
+      "endMs": 145041,
+      "lyric": "Like me, Like me",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "Like me, Like me"
+        }
+      ]
+    },
+    {
+      "id": "line-077",
+      "index": 76,
+      "startMs": 145091,
+      "endMs": 146228,
+      "lyric": "아주 눈이 부신",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "아주 눈이 부신"
+        }
+      ]
+    },
+    {
+      "id": "line-078",
+      "index": 77,
+      "startMs": 146277,
+      "endMs": 150163,
+      "lyric": "너를 숨김없이 보여줘 ",
+      "chants": [
+        {
+          "id": "line-078-chant-0",
+          "text": "(RESCENE!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 146277,
+          "lineEndMs": 150163,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너를 숨김없이 보여줘 "
+        },
+        {
+          "type": "chant",
+          "text": "(RESCENE!)"
+        }
+      ]
+    },
+    {
+      "id": "line-079",
+      "index": 78,
+      "startMs": 150213,
+      "endMs": 152828,
+      "lyric": "한 번도 빛난 적 없었던",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "한 번도 빛난 적 없었던"
+        }
+      ]
+    },
+    {
+      "id": "line-080",
+      "index": 79,
+      "startMs": 152877,
+      "endMs": 154604,
+      "lyric": "미지의 향으로",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "미지의 향으로"
+        }
+      ]
+    },
+    {
+      "id": "line-081",
+      "index": 80,
+      "startMs": 154654,
+      "endMs": 158301,
+      "lyric": "온 세상을 물들여 ",
+      "chants": [
+        {
+          "id": "line-081-chant-0",
+          "text": "(LOVE ATTACK!)",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 154654,
+          "lineEndMs": 158301,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "온 세상을 물들여 "
+        },
+        {
+          "type": "chant",
+          "text": "(LOVE ATTACK!)"
+        }
+      ]
+    },
+    {
+      "id": "line-082",
+      "index": 81,
+      "startMs": 158351,
+      "endMs": 160413,
+      "lyric": "새로워진 (그 장면에)",
+      "chants": [
+        {
+          "id": "line-082-chant-0",
+          "text": "장면에",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 158351,
+          "lineEndMs": 160413,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "새로워진 "
+        },
+        {
+          "type": "chant",
+          "text": "장면에"
+        },
+        {
+          "type": "lyric",
+          "text": "(그 장면에)"
+        }
+      ]
+    },
+    {
+      "id": "line-083",
+      "index": 82,
+      "startMs": 160462,
+      "endMs": 162524,
+      "lyric": "두 눈앞은 (난 황홀해)",
+      "chants": [
+        {
+          "id": "line-083-chant-0",
+          "text": "황홀해",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 160462,
+          "lineEndMs": 162524,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "두 눈앞은 "
+        },
+        {
+          "type": "chant",
+          "text": "황홀해"
+        },
+        {
+          "type": "lyric",
+          "text": "(난 황홀해)"
+        }
+      ]
+    },
+    {
+      "id": "line-084",
+      "index": 83,
+      "startMs": 162574,
+      "endMs": 164591,
+      "lyric": "너의 손을 ",
+      "chants": [
+        {
+          "id": "line-084-chant-0",
+          "text": "잡을 땐",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 162574,
+          "lineEndMs": 164591,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너의 손을 "
+        },
+        {
+          "type": "chant",
+          "text": "잡을 땐"
+        }
+      ]
+    },
+    {
+      "id": "line-085",
+      "index": 84,
+      "startMs": 164641,
+      "endMs": 166658,
+      "lyric": "너와 ",
+      "chants": [
+        {
+          "id": "line-085-chant-0",
+          "text": "어우러질 땐",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 164641,
+          "lineEndMs": 166658,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "너와 "
+        },
+        {
+          "type": "chant",
+          "text": "어우러질 땐"
+        }
+      ]
+    },
+    {
+      "id": "line-086",
+      "index": 85,
+      "startMs": 166707,
+      "endMs": 169522,
+      "lyric": "빛을 이끌어 ",
+      "chants": [
+        {
+          "id": "line-086-chant-0",
+          "text": "With me, With me",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 166707,
+          "lineEndMs": 169522,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "빛을 이끌어 "
+        },
+        {
+          "type": "chant",
+          "text": "With me, With me"
+        }
+      ]
+    },
+    {
+      "id": "line-087",
+      "index": 86,
+      "startMs": 169572,
+      "endMs": 171882,
+      "lyric": "마치 Chemically 우린",
+      "chants": [],
+      "segments": [
+        {
+          "type": "lyric",
+          "text": "마치 Chemically 우린"
+        }
+      ]
+    },
+    {
+      "id": "line-088",
+      "index": 87,
+      "startMs": 171931,
+      "endMs": 177352,
+      "lyric": "(완벽하게 어울려)",
+      "chants": [
+        {
+          "id": "line-088-chant-0",
+          "text": "완벽하게 어울려",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 171931,
+          "lineEndMs": 177352,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "완벽하게 어울려"
+        },
+        {
+          "type": "lyric",
+          "text": "(완벽하게 어울려)"
+        }
+      ]
+    },
+    {
+      "id": "line-089",
+      "index": 88,
+      "startMs": 177402,
+      "endMs": 178680,
+      "lyric": "",
+      "chants": [
+        {
+          "id": "line-089-chant-0",
+          "text": "Feeling love attack!",
+          "startMs": null,
+          "endMs": null,
+          "lineStartMs": 177402,
+          "lineEndMs": 178680,
+          "chantLeadMs": 0
+        }
+      ],
+      "segments": [
+        {
+          "type": "chant",
+          "text": "Feeling love attack!"
+        }
+      ]
+    }
+  ]
+}
