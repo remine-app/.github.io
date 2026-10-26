@@ -15,4 +15,26 @@ button{font-weight:500}h1,h2,h3,b,strong{font-weight:600}input{font-size:16px}.s
 
 .welcome-backdrop{position:fixed;inset:0;z-index:100;background:#38212b55;backdrop-filter:blur(5px);display:grid;place-items:center;padding:20px}.welcome-dialog{background:#fffafb;border-radius:25px;max-width:430px;width:100%;max-height:88dvh;overflow:auto;padding:15px;text-align:center}.welcome-dialog .audio-installer{margin:0 0 10px;border:0;padding:16px 5px}
 
+/* Practice uses the viewport left above the existing navigation. */
+.main:has(.practice-layout){padding:env(safe-area-inset-top) 18px 0;min-height:0}
+.practice-layout{height:calc(100dvh - 74px - env(safe-area-inset-top) - env(safe-area-inset-bottom));min-height:0;overflow:hidden}
+.practice-appbar{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;min-height:64px;flex-shrink:0;gap:8px}
+.practice-appbar>a{display:grid;place-items:center;width:44px;height:44px}
+.practice-song-info{min-width:0;text-align:center}.practice-song-info h1{font:600 18px/1.3 inherit;font-size:18px;line-height:1.3;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.practice-song-info p{font-size:11px;color:#77717e;margin:3px 0 0}
+.practice-layout .mode-tabs{height:48px;padding:3px;margin:0 0 5px}.practice-layout .mode-tabs button{min-height:40px;padding:7px 6px;font-size:13px}
+.practice-layout .hint-tabs{margin:0 0 4px;gap:8px}.practice-layout .hint-tabs button{min-height:36px;padding:5px 12px}
+.practice-layout .lyrics-scroll{flex:1;min-height:0;margin:0 -6px;padding:0 6px;overscroll-behavior:contain}
+.practice-layout .lyrics-content{padding:clamp(12px,3dvh,24px) 0 clamp(24px,8dvh,64px)}
+.practice-layout .lyric-line{min-height:44px;padding:9px 8px;grid-template-columns:40px minmax(0,1fr);gap:10px}.practice-layout .lyric-words{min-width:0}
+.follow-slot{height:36px;flex-shrink:0;display:flex;align-items:center;justify-content:flex-end;padding-right:0}
+.practice-layout .follow-button{position:static;min-height:32px;padding:4px 10px;font-size:12px;box-shadow:none;margin-right:0}
+.practice-layout .player-controls{flex-shrink:0;padding:4px 4px 10px;height:130px;background:#fffafb}
+.practice-layout .player-controls input[type=range]{display:block;margin:0;height:24px}
+.practice-layout .track-time{font-size:11px;margin:0 0 6px;line-height:16px}
+.practice-layout .transport{height:60px}.practice-layout .transport button{width:44px;min-height:44px}.practice-layout .transport button small{font-size:10px}.practice-layout .transport .play-main{width:58px;height:58px}
+.practice-layout.install-layout{height:auto;min-height:calc(100dvh - 74px - env(safe-area-inset-top) - env(safe-area-inset-bottom));overflow:visible;padding-bottom:20px}
+@media(min-width:700px){.practice-layout{height:calc(100dvh - 92px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}}
+@media(max-height:650px){.practice-appbar{min-height:56px}.practice-layout .mode-tabs{height:44px;margin-bottom:2px;padding:1px}.practice-layout .hint-tabs button{min-height:32px}.practice-layout .lyrics-content{padding-top:8px;padding-bottom:24px}.practice-layout .lyric-line{padding-top:7px;padding-bottom:7px}.practice-layout .player-controls{height:112px;padding-bottom:4px}.practice-layout .transport{height:54px}.practice-layout .transport .play-main{width:54px;height:54px}.follow-slot{height:32px}}
+@media(max-height:450px){.practice-layout{overflow:auto}.practice-layout .lyrics-scroll{flex:1 0 132px}.practice-layout .player-controls{height:106px}}
+
 .lyrics-content{padding:16px 0 45%}.practice-cover:after{content:"";position:absolute;right:0;top:0;width:62%;height:100%;background:url("/images/lightstick.webp") 55% 12%/cover;mask-image:linear-gradient(90deg,transparent,#000 55%);opacity:.65;pointer-events:none}.practice-cover>div,.practice-cover>img{position:relative;z-index:1}.practice-cover>div:not(.art){max-width:75%}
